@@ -1,5 +1,20 @@
-<div class="col-xs-4">
-<h2> Clan Tima </h2>
+<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 clan-tima">
+<h3>{{clan.ime}}</h3>
+<img class="clan-slika" src="{{clan.image}}" alt="ClanTimaImage"/>
+
+<div class="clan-info">
+  <p>Fakultet: {{clan.fakultet}}</p>
+  <p>Godina: {{clan.godina}}</p>
+  <p>Mjesto Stanovanja: {{clan.stanovanje}}</p>
+  <p>Fokus programiranja: {{clan.fokus}}</p>
+</div>
+{{#if clan.links}}
+<div class="clan-links">
+  {{#each clan.links as |link|}}
+  <a href="{{link.link}}"><i class="fa fa-{{link.class}}" aria-hidden="true"></i></a>
+  {{/each}}
+</div>
+{{/if}}
 </div>
 
 <!--

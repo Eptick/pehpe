@@ -1,0 +1,98 @@
+<!-- Navigation -->
+   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                   Menu <i class="fa fa-bars"></i>
+               </button>
+
+               <a class="navbar-brand page-scroll" href="#page-top">
+                   <i class="fa fa-play-circle"></i> <span class="light">Pe</span>HPe
+               </a>
+           </div>
+
+           <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+               <ul class="nav navbar-nav">
+                   <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                   <li class="hidden">
+                       <a href="#page-top"></a>
+                   </li>
+                   <li>
+                       <a class="page-scroll" href="#about">O nama</a>
+                   </li>
+                   <li>
+                       <a class="page-scroll" href="#download">TryCodeCatch</a>
+                   </li>
+                   <li>
+                       <a class="page-scroll" href="#contact">Članovi</a>
+                   </li>
+               </ul>
+           </div>
+           <!-- /.navbar-collapse -->
+       </div>
+       <!-- /.container -->
+   </nav>
+
+   <!-- Intro Header -->
+   <header class="intro grayscale">
+       <div class="intro-body">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-8 col-md-offset-2">
+                       <h1 class="brand-heading">Timski portfolio</h1>
+                       <p class="intro-text">Web Aplikacija za predstavljanje
+                         tima PeHPe u svrhu TryCodeCatch natjecanja!</p>
+                       <a href="#about" class="btn btn-circle page-scroll">
+                           <i class="fa fa-angle-double-down animated"></i>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>
+
+   <!-- About Section -->
+   <section id="about" class="container content-section text-center">
+       <div class="row">
+           <div class="col-lg-8 col-lg-offset-2">
+               <h2>O nama</h2>
+               <p> PeHPe je tim od 3 studenta treće godine preddiplomskog studija formiran na <a href="http://foi.hr">Fakultetu Organizacije i Informatike</a> gdje spomenuti studenti
+                 pohađaju fakultet. Tim se okupio zbog želje i motivacije za radom na praktičnim vještinama koje će im biti potrebne nakon završetka studija.</p>
+                 <p> Osim želje za novim praktičnim znanjima i iskustvu na natjecanju kao što je TryCodeCatch faktor koji je igrao ulogu u prijavi tima na natjecanje
+                   jest motivacija da se pokrenu i da preuzmu kontrolu nad svojom karijerom, da se istaknu u očima poslodavca. I najvažnije od svega, dobra zabava i upoznavanje novog društva!</p>
+
+           </div>
+       </div>
+   </section>
+
+   <!-- Download Section -->
+   <section id="download" class="content-section text-center">
+       <div class="download-section">
+           <div class="container">
+               <div class="col-lg-8 col-lg-offset-2">
+                   <h2>TryCodeCatch</h2>
+                   <p>TryCodeCatch je natjecanje u izgradnji WebAplikacija koje
+                   odražava poduzeće Combis drugu godinu zaredom (2017).
+                 Ovo natjecanje je privuklo našu pozornost te smo se odlučili na njega prijaviti</p>
+                   <a href="http://trycodecatch.com/" class="btn btn-default btn-lg">TryCodeCatch</a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="container content-section text-center">
+     <div class="row clanovi-tima">
+       {{#each model as |clan|}}
+        {{clan-tima clan=clan}}
+       {{/each}}
+     </div>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+       <div class="container text-center">
+           <p>Tim PeHPe 2017</p>
+       </div>
+   </footer>
