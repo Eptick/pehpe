@@ -15,8 +15,20 @@
   {{/each}}
 </div>
 {{/if}}
-</div>
+{{#if clan.projekti}}
+<button {{action "toggleProjekti" clan.id }} class="clan-button-projekti">Projekti</button>
+<div id="clan-projekti-{{clan.id}}" style="display: none;">
+  {{#each clan.projekti as |projekt|}}
+    <div class="projekt">
+      <img src="{{projekt.img}}" alt="slika projekta">
+      <h3> {{projekt.ime}} </h3>
+      <p> {{projekt.opis}} </p>
+    </div>
+  {{/each}}  
 
+</div>
+{{/if}}
+</div>
 <!--
 Član tima će imati:
 Sliku, Ime, prezime, fakultet, godinu, mjesto stanovanja

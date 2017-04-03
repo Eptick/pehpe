@@ -341,3 +341,24 @@ body {
   font-size: 3em;
   margin: 0 5px;
 }
+.clan-button-projekti {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #42DCA3;
+  color: #42DCA3;
+  height: 50px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.projekt {
+  height: auto;
+  margin: 10px 5px;
+  border-bottom: 2px dashed #42DCA3;
+}
+.projekt > img {
+  width: 60%;
+}
+.projekt > p{
+  font-size: 1em;
+}
