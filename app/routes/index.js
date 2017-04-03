@@ -68,9 +68,9 @@ export default Ember.Route.extend({
       ime: 'Marko Škvorc',
       fakultet: 'Fakultet Organizacije i Informatike',
       godina: 'Treća godina preddiplomskog studija',
-      stanovanje: 'Poture',
+      stanovanje: 'Podturen',
       fokus: 'BackEnd',
-      image: 'img/skvorc.jpg',
+      image: 'img/skvorc2.jpg',
       links: [
         {
           link: 'https://github.com/marskvorc',
@@ -91,3 +91,4 @@ export default Ember.Route.extend({
     }];
   }
 });
+
