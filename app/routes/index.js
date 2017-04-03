@@ -32,7 +32,7 @@ export default Ember.Route.extend({
           },
           {
             ime: "Green website",
-            img: "img/projekti/redzic/green.png",
+            img: "img/projekti/redzic/Green.png",
             opis: "Web shop rađen u prestashop razvojnom okviru"
           }
         ]
